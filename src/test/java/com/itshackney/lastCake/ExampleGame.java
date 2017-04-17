@@ -7,16 +7,43 @@ public class ExampleGame {
 	private static Random random = new Random();
   @Test
   public void test() throws Exception {
-    //assertEquals("You didn't win", play(5, true), true);
+      // Player plays first
+    assertEquals("You didn't win", play(1, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(2, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(3, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(4, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(5, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(6, true), true);
     System.out.println();
     assertEquals("You didn't win", play(7, true), true);
     System.out.println();
+    assertEquals("You didn't win", play(8, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(9, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(10, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(11, true), true);
+    System.out.println();
     assertEquals("You didn't win", play(12, true), true);
     System.out.println();
-    assertEquals("You didn't win", play(23, true), true);
+    assertEquals("You didn't win", play(15, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(19, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(25, true), true);
+    System.out.println();
+    assertEquals("You didn't win", play(99, true), true);
+    System.out.println();
   }
   
 	public static boolean play(int cakes, boolean debug) throws Exception {
+	    System.out.println("======================================================");
 		if (cakes < 0) { throw new Exception("At least one cake required"); }
 		Player player = new Player(cakes);
 		// First, ask the player if they wish to move first.
